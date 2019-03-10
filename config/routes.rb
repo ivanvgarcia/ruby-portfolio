@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :portfolios
+  get 'react-items', to: 'portfolios#react'
 
   get 'about-me', to: "pages#about"
   get 'contact', to: "pages#contact"
