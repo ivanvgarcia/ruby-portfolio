@@ -59,20 +59,20 @@ class PostsController < ApplicationController
   def toggle_status
     if @post.draft?
       @post.published!
-    else @post.published?
+    elsif @post.published?
       @post.draft!
     end
-    redirect_to posts_url, notice: "Post status has been update."
+    redirect_to posts_url, notice: "Post status has been updated."
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.friendly.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def post_params
-      params.require(:post).permit(:title, :body)
-    end
+  def set_post
+    @post = Post.friendly.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def post_params
+    params.require(:post).permit(:title, :body)
+  end
 end
