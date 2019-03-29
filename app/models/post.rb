@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  belongs_to :topic
+  belongs_to :topic, optional: true
   
   enum status: { draft: 0, published: 1 }
   extend FriendlyId
