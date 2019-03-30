@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <meta name="keywords" content="<%= @seo_keywords %>"/>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css' %>
     <%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,7 +16,12 @@
 
     <%= login_helper %>
 
-    <%= yield %>
+    <div class="section">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    
 
     <%= render "shared/nav", location: "bottom" %>
 

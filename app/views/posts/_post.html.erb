@@ -1,14 +1,12 @@
-<tr>
-  <td><%= post.title.upcase %></td>
-  <td><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</td>
-  <td><%= post.body %></td>
-  <td>
-    <%= link_to post.status, toggle_status_post_path(post), method: :post %>
-  </td>
-  <td><%= link_to 'Show', post %></td>
-  <td><%= link_to 'Edit', edit_post_path(post) %></td>
-  <td>
-    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you
-    sure?' } %>
-  </td>
-</tr>
+<header><%= post.title.upcase %></header>
+<small><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</small>
+<p><%= post.body %></p>
+<p>
+  <%= link_to post.status, toggle_status_post_path(post), method: :post %>
+</p>
+<div><%= link_to 'Show', post %></div>
+<div><%= link_to 'Edit', edit_post_path(post) %></div>
+<div>
+  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?'
+  } %>
+</div>

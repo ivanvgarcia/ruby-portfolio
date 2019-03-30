@@ -2,20 +2,11 @@
 
 <h1>Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <%= render @posts %>
-  </tbody>
-</table>
+<% cache do %>
+<div>
+  <%= render partial: @posts, spacer_template: 'post_ruler' %>
+</div>
+<% end %>
 
 <br />
 
