@@ -17,7 +17,10 @@
 //= require_tree .
 
 //= require materialize
-
-$(document).ready(function() {
-  $('.dropdown-trigger').dropdown();
+document.addEventListener('DOMContentLoaded', function() {
+  const elems = document.querySelectorAll('.dropdown-trigger');
+  const options = {
+    hover: true
+  };
+  const instances = M.Dropdown.init(elems, options);
 });
