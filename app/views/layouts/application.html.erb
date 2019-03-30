@@ -6,19 +6,16 @@
     <meta name="keywords" content="<%= @seo_keywords %>"/>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css' %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
     <%= render "shared/nav", location: "top" %>
 
     <%= login_helper %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
 
     <%= yield %>

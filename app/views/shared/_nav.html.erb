@@ -1,7 +1,17 @@
-<nav class="<%= location %> navbar is-danger">
-  <%= link_to 'Home', root_path,  class: "navbar-item" %>
-  <%= link_to 'About Me', about_me_path,  class: "navbar-item" %>
-  <%= link_to 'Contact', contact_path,  class: "navbar-item" %>
-  <%= link_to 'Blog', posts_path,  class: "navbar-item" %>
-  <%= link_to 'Portfolio', portfolios_path, class: "navbar-item" %>
+<nav class="<%= location %>">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <%= link_to root_path, class: "navbar-item" do %>
+          <i class="material-icons">home</i>  
+        <% end %>
+        
+      </li>
+      <li><%= link_to 'About Me', about_me_path, class: "navbar-item" %></li>
+      <li><%= link_to 'Contact', contact_path, class: "navbar-item" %></li>
+      <li><%= link_to 'Blog', posts_path, class: "navbar-item" %></li>
+      <li><%= link_to 'Portfolio', portfolios_path, class: "navbar-item" %></li>
+    </ul>
+  </div>
 </nav>
