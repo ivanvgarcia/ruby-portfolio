@@ -11,3 +11,6 @@
 <% @portfolio_item.technologies.each do |t| %>
 <p><%= t.name %></p>
 <% end %>
+
+<%= link_to 'edit', edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %>
+<%= link_to 'delete', portfolio_path(@portfolio_item), method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>

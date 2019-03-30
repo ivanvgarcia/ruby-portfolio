@@ -10,14 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery3
-//= require jquery_ujs
+//= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
 
 //= require materialize
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('turbolinks:load', function() {
+  console.log('ok');
   const elems = document.querySelectorAll('.dropdown-trigger');
   const options = {
     hover: true
