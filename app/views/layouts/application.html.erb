@@ -12,14 +12,15 @@
 
   <body>
     <%= render "shared/nav", location: "top" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-    <%= login_helper %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
-
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
 
     <%= source_helper("application") %>
+    
+    <%= @copyright %>
   </body>
 </html>
