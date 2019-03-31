@@ -1,2 +1,15 @@
-<h1>Hi, <%= current_user.first_name %></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="pages-layout__left">
+  <%= render "shared/application_nav", location: "top" %>
+</div>
+<div class="pages-layout__right">
+  <h1>Hi, I'm Ivan Garcia</h1>
+  <h5>
+    A fullstack web developer specialiazing in building web applications for
+    clients all around the world.
+  </h5>
+  <%= link_to about_me_path, class: "waves-effect waves-light btn-large" do %>
+    <i class="material-icons left">cloud</i>
+    Learn More
+  <% end %>
+  <%= @copyright %>
+</div>

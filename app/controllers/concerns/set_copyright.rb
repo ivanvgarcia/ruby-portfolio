@@ -6,6 +6,6 @@ module SetCopyright
   end
 
   def set_copyright
-    @copyright = "&copy; #{Time.now.year} | <b>Ivan Garcia</b> All rights reserved".html_safe
+    @copyright = "<div>&copy; #{Time.now.year} | <b>Ivan Garcia</b> All rights reserved</div>".html_safe
   end
 end

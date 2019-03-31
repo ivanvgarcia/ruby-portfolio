@@ -1,0 +1,38 @@
+<ul id="dropdown1" class="dropdown-content">
+  <%= login_helper %>
+</ul>
+<nav class="<%= location %> transparent">
+  <div class="nav-wrapper">
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <%= link_to root_path, class: "navbar-item" do %>
+        <i class="material-icons">home</i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to about_me_path, class: "navbar-item" do %>
+        <i class="material-icons">person</i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to contact_path, class: "navbar-item" do %>
+        <i class="material-icons">contacts</i>
+        <% end %>
+      </li>
+      <li><%= link_to 'Blog', posts_path, class: "navbar-item" %></li>
+      <li>
+        <%= link_to 'Portfolio', portfolios_path, class: "navbar-item" %>
+      </li>
+      <li>
+        <a
+          class="dropdown-trigger waves-effect waves-light btn-flat red darken-3 white-text"
+          href="#!"
+          data-target="dropdown1"
+          ><i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+    </ul>
+
+    <a href="#" class="brand-logo">Ivan Garcia</a>
+  </div>
+</nav>

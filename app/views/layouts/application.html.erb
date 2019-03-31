@@ -8,19 +8,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+
+
   </head>
 
   <body>
-    <%= render "shared/nav", location: "top" %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-    <div class="container">
-      <%= yield %>
+    <div class="main-wrapper">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <div class="pages-layout">
+        <%= yield %>  
+      </div>
     </div>
-
-    <%= source_helper("application") %>
-    
-    <%= @copyright %>
   </body>
 </html>

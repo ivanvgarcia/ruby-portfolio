@@ -60,3 +60,5 @@ gem 'devise', '~> 4.2'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons' 
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+gem 'particles-js-rails'
+
