@@ -3,12 +3,12 @@
     <%= post.title.upcase %>
   </h4>
 </header>
-<small><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</small>
+<p><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</p>
 <p><%= post.body %></p>
 <p>
   <%= link_to post.status, toggle_status_post_path(post), method: :post %>
 </p>
-<div><%= link_to 'Show', post %></div>
+<div><%= link_to 'Read More', post,  class: "btn" %></div>
 <div>
   <%= link_to 'Edit', edit_post_path(post) if logged_in?(:site_admin) %>
 </div>

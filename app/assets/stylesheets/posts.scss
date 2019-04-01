@@ -1,2 +1,10 @@
+@import 'materialize/components/color-variables';
+@import 'variables';
 @import 'materialize';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+p {
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  font-family: 'Lato', sans-serif;
+}
