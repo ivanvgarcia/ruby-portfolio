@@ -62,5 +62,7 @@ gem 'material_icons'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'particles-js-rails'
 gem "font-awesome-rails"
+gem 'webpacker', '~> 4.x'
+
 
 

@@ -1,8 +1,10 @@
 <h1>Posts</h1>
 
 <% cache do %>
-  <div>
-    <%= render partial: @posts, spacer_template: 'post_ruler' %>
+  <div class="row">
+    <div class="col s12 m10">
+      <%= render partial: @posts, spacer_template: 'post_ruler' %>
+    </div>
   </div>
 <% end %>
 
