@@ -1,4 +1,8 @@
-<header><%= post.title.upcase %></header>
+<header>
+  <h4>
+    <%= post.title.upcase %>
+  </h4>
+</header>
 <small><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</small>
 <p><%= post.body %></p>
 <p>

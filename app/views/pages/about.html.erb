@@ -1,13 +1,37 @@
 <div class="pages-layout__left">
   <%= render "shared/application_nav", location: "top" %>
+  <div class="pages-layout__media">
+    <%= image_tag 'ivan', class: "pages-layout__image circle responsive-img z-depth-4" %>
+    <div class="pages-layout__social-media">
+      <a href="//www.github.com/ivanvgarcia">
+        <%= fa_icon "github" %>
+      </a>
+      <a href="//www.linkedin.com/ivanvgarcia">
+        <%= fa_icon "linkedin" %>
+      </a>
+      <a href="mailto:ivanvlora@gmail.com?subject=PortfolioContact" "email me">
+        <%= fa_icon "envelope" %>
+      </a>
+    </div>
+  </div>
 </div>
 <div class="pages-layout__right">
   <h1>About Me</h1>
-  <h5>
-    A fullstack web developer specialiazing in building web applications for
-    clients all around the world.
-  </h5>
-  <%= link_to about_me_path, class: "waves-effect waves-light btn-large" do %>
-  <i class="material-icons left">cloud</i>
-  Learn More <% end %> <%= @copyright %>
+  <p class="flow-text">
+    I'm Ivan, born and raised in the Bronx, New York, but currently living in
+    Japan.
+  </p>
+  <p class="flow-text">
+    As a web developer, I strive to build web applications that are modular,
+    fast, efficient, with a modern design and I believe that being transparent
+    with clients and crafting my work to their specifications is a key tenet for
+    building a successful project.
+  </p>
+  <p class="flow-text">
+    If you need a developer that will deliver a project on time and within
+    budget, look no further and contact me.
+  </p>
+  <div class="pages-layout__footer">
+    <%= @copyright %>
+  </div>
 </div>

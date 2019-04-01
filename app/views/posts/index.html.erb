@@ -1,13 +1,9 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Posts</h1>
 
 <% cache do %>
-<div>
-  <%= render partial: @posts, spacer_template: 'post_ruler' %>
-</div>
+  <div>
+    <%= render partial: @posts, spacer_template: 'post_ruler' %>
+  </div>
 <% end %>
-
-<br />
 
 <%= link_to 'New Post', new_post_path if logged_in?(:site_admin) %>

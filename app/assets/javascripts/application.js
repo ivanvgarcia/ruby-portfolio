@@ -14,7 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-
+//= require particles.js
 //= require materialize
 document.addEventListener('turbolinks:load', function() {
   console.log('ok');
@@ -23,4 +23,8 @@ document.addEventListener('turbolinks:load', function() {
     hover: true
   };
   const instances = M.Dropdown.init(elems, options);
+
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 });

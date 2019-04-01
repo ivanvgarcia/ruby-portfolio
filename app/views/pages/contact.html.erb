@@ -1,13 +1,34 @@
 <div class="pages-layout__left">
   <%= render "shared/application_nav", location: "top" %>
+  <div class="pages-layout__media">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7476848857004!2d139.70593741528654!3d35.63394624017109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b231669c637%3A0x3a4addf0e52f9897!2sImpact+HUB+Tokyo!5e0!3m2!1sen!2sjp!4v1554018162978!5m2!1sen!2sjp"
+      width="450"
+      height="450"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+    ></iframe>
+  </div>
 </div>
 <div class="pages-layout__right">
-  <h1>Contact</h1>
-  <h5>
-    A fullstack web developer specialiazing in building web applications for
-    clients all around the world.
-  </h5>
-  <%= link_to about_me_path, class: "waves-effect waves-light btn-large" do %>
-  <i class="material-icons left">cloud</i>
-  Learn More <% end %> <%= @copyright %>
+  <h1>Would you like to work together?</h1>
+  <div class="pages-layout__information">
+    <div class="pages-layout__details">
+      <%= fa_icon "map-marker" %>
+      2-chōme-11-３ Meguro, Meguro City, Tōkyō-to 153-0063
+    </div>
+    <div class="pages-layout__details">
+      <%= fa_icon "phone" %>
+      (50) 8472 4827
+    </div>
+
+  </div>
+    <a href="mailto:ivanvlora@gmail.com?subject=PortfolioContact" class="waves-effect waves-light btn-large"  %>
+    <i class="material-icons left">mail</i>
+    Send Email 
+    </a>
+  <div class="pages-layout__footer">
+    <%= @copyright %>
+  </div>
 </div>
