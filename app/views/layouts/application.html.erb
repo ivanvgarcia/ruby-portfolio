@@ -18,6 +18,7 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <div class="pages-layout">
+      <%= render "shared/application_nav", location: "top" %>
         <%= yield %>  
       </div>
     </div>

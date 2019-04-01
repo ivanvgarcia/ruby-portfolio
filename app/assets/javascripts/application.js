@@ -18,11 +18,11 @@
 //= require materialize
 document.addEventListener('turbolinks:load', function() {
   console.log('ok');
-  const elems = document.querySelectorAll('.dropdown-trigger');
-  const options = {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var options = {
     hover: true
   };
-  const instances = M.Dropdown.init(elems, options);
+  var instances = M.Dropdown.init(elems, options);
 
   particlesJS.load('particles-js', 'assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
