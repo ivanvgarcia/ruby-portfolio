@@ -1,9 +1,14 @@
 <h1>Ivan Garcia's Code Blog</h1>
 
 <% cache do %>
-  <div class="row">
-    <div class="col s12 m10">
-      <%= render partial: @posts, spacer_template: 'post_ruler' %>
+  <div class="row is-marginless">
+    <div class="col s12 m2 grey lighten-5 posts-side-menu is-paddingless">
+      <% @posts.each do |post| %>
+        <%= render 'post_list', post: post %>
+      <% end %>
+    </div>
+    <div id="show-post" class="col s12 m10">
+      <%= render "show-post", post: @post %>
     </div>
   </div>
 <% end %>
