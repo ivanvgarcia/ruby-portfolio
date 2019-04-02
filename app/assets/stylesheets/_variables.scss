@@ -12,3 +12,27 @@ $success-color: color('green', 'base') !default;
 $error-color: color('red', 'base') !default;
 
 $link-color: color('light-blue', 'darken-1') !default;
+
+p {
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  &__title {
+    margin: 0.5rem;
+  }
+  &__description {
+    padding: 0 20rem;
+    text-align: center;
+    margin-top: 0;
+  }
+}

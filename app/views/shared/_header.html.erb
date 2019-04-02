@@ -1,0 +1,13 @@
+<header class="header">
+    <h1 class="header__title"><%= title %></h1>
+    <p class="header__description"><%= description %></p>
+    
+    <div class="header__actions">
+      <%= link_to about_me_path, class: "waves-effect waves-light btn indigo darken-3" do %>
+        <%= fa_icon "camera" %> More About Me
+      <% end %>
+      <%= link_to posts_path, class: "waves-effect waves-light btn white indigo-text text-darken-3" do %>
+        <%= fa_icon "camera" %> My Blog
+      <% end %>
+    </div>
+  </header>
