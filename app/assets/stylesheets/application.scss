@@ -8,6 +8,7 @@ nav {
   box-shadow: none;
   position: fixed;
   width: 50%;
+  z-index: 10;
 }
 
 a {
@@ -54,7 +55,6 @@ nav .brand-logo {
 .pages-layout {
   display: flex;
   min-height: 100vh;
-  z-index: 10;
   &__media {
     display: flex;
     flex-direction: column;
@@ -101,9 +101,10 @@ nav .brand-logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(228, 228, 228);
+    background: rgba(228, 228, 228, 0.8);
     flex: 0 0 50%;
     position: relative;
+    z-index: 10;
     & > * {
       margin: 0 0 2rem 0;
     }
