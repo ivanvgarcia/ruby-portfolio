@@ -2,11 +2,11 @@
 
 <div class="container">
   <div class="row">
-    <div class="col s12 m7">
+    <div class="col s12 m4">
       <%= image_tag @portfolio_item.main_image, class: "responsive-img" unless @portfolio_item.main_image.nil?
       %>
     </div>
-    <div class="col s12 m5">    
+    <div class="col s12 m8">    
       <em><%= @portfolio_item.subtitle %></em>
       <p><%= @portfolio_item.body %></p>
       
