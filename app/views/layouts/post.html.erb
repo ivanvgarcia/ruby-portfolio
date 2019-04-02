@@ -14,13 +14,11 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+    <%= render "shared/nav", location: "" %>
     <%= yield %>
  
     <%= source_helper("post") %>
-    <%= render "shared/nav", location: "" %>
+    <%= render "shared/footer", location: "" %>
 
   </body>
 </html>

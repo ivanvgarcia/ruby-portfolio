@@ -1,12 +1,12 @@
-<p>
-  <strong>Title:</strong>
-  <%= post.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= post.body %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(post) if logged_in?(:site_admin) %> | <%=
-link_to 'Back', posts_path %>
+<div class="post">
+  <div class="post__actions">
+    <%= link_to 'Edit', edit_post_path(post), class: "btn indigo" if
+    logged_in?(:site_admin) %>
+  </div>
+  <h2 class="post__title indigo-text text-darken-3">
+    <%= post.title %>
+  </h2>
+  <p class="post__body">
+    <%= post.body %>
+  </p>
+</div>
