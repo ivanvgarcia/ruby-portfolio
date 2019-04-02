@@ -2,7 +2,8 @@
   "name": "RubyPortfolio",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.0.2"
+    "@rails/webpacker": "^4.0.2",
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.2.1"
