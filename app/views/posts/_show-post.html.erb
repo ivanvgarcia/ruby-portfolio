@@ -1,12 +1,21 @@
 <div class="post">
-  <div class="post__actions">
-    <%= link_to 'Edit', edit_post_path(post), class: "btn indigo" if
-    logged_in?(:site_admin) %>
-  </div>
-  <h2 class="post__title indigo-text text-darken-3">
-    <%= post.title %>
-  </h2>
-  <p class="post__body">
-    <%= post.body %>
-  </p>
+  <% if post.nil? %>
+    <h2 class="post__title indigo-text text-darken-3">
+      Ivan has not written any posts yet...
+    </h2>
+    <p class="post__body">
+    </p>
+  <% else %>
+    <div class="post__actions">
+      <%= link_to 'Edit', edit_post_path(post), class: "btn indigo" if
+      logged_in?(:site_admin) %>
+    </div>
+    <h2 class="post__title indigo-text text-darken-3">
+      <%= post.title %>
+    </h2>
+    <p class="post__body">
+      <%= post.body %>
+    </p>
+  <% end %>
+  
 </div>
