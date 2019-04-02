@@ -17,14 +17,15 @@
 //= require particles.js
 //= require materialize
 document.addEventListener('turbolinks:load', function() {
-  console.log('ok');
-  var elems = document.querySelectorAll('.dropdown-trigger');
+  var dropdown = document.querySelectorAll('.dropdown-trigger');
+  var sideNav = document.querySelectorAll('.sidenav');
+
   var options = {
     hover: true
   };
-  var instances = M.Dropdown.init(elems, options);
 
-  console.log('Loading particles.js');
+  var dropdownInstances = M.Dropdown.init(dropdown, options);
+  var sidenavInstances = M.Sidenav.init(sideNav);
 
   particlesJS('particles-js', {
     particles: {
@@ -136,4 +137,12 @@ document.addEventListener('turbolinks:load', function() {
     },
     retina_detect: true
   });
+});
+
+document.addEventListener('turbolinks:before-render', () => {
+  const elem = document.querySelector('.sidenav');
+  const instance = M.Sidenav.getInstance(elem);
+  if (instance) {
+    instance.destroy();
+  }
 });
