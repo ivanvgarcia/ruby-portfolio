@@ -3052,6 +3052,11 @@ html-entities@^1.2.0:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
 
+html5sortable@^0.9.10:
+  version "0.9.10"
+  resolved "https://registry.yarnpkg.com/html5sortable/-/html5sortable-0.9.10.tgz#bd6e4d70e18da342e7dbeaadb9e5551fb0b82033"
+  integrity sha512-VLKNQQbpOqA9b0v4XNAt/6bhonGdDo2I23kquencNC0S8n894u3/19LH/puaSead55r2lMqLTVsd0x8TZYZROQ==
+
 http-deceiver@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/http-deceiver/-/http-deceiver-1.2.7.tgz#fa7168944ab9a519d337cb0bec7284dc3e723d87"

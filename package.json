@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^4.0.2",
+    "html5sortable": "^0.9.10",
     "particles.js": "^2.0.0"
   },
   "devDependencies": {

@@ -1,9 +1,12 @@
-<%= render 'shared/header', title: "My Portfolio", description: "Check out some of my projects below. I like to dabble in many technologies but at the core, I work with JavaScript and Ruby. As for backend, I love using Node.js and Ruby on Rails. My go to frontend framework is React.js" %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<%= render 'shared/header', title: "My Portfolio", description: "Check out some
+of my projects below. I like to dabble in many technologies but at the core, I
+work with JavaScript and Ruby. As for backend, I love using Node.js and Ruby on
+Rails. My go to frontend framework is React.js" %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <div class="container">
-  <div class="row">
+  <div class="row sortable">
     <%= render partial: 'portfolio_item', collection: @portfolio_items %>
   </div>
 </div>

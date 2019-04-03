@@ -14,6 +14,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require jquery-ui
+//= require html.sortable
 //= require particles.js
 //= require materialize
 //= require turbolinks
