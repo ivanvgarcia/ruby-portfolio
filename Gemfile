@@ -63,6 +63,8 @@ gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'particles-js-rails'
 gem "font-awesome-rails"
 gem 'webpacker', '~> 4.x'
+gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 
 
