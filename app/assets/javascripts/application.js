@@ -111,7 +111,7 @@ document.addEventListener('turbolinks:load', function() {
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 200,
           line_linked: {
             opacity: 1
           }
@@ -140,8 +140,8 @@ document.addEventListener('turbolinks:load', function() {
 });
 
 document.addEventListener('turbolinks:before-render', () => {
-  const elem = document.querySelector('.sidenav');
-  const instance = M.Sidenav.getInstance(elem);
+  var elem = document.querySelector('.sidenav');
+  var instance = M.Sidenav.getInstance(elem);
   if (instance) {
     instance.destroy();
   }

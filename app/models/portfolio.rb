@@ -7,7 +7,11 @@ class Portfolio < ApplicationRecord
   validates_presence_of :title, :body, :main_image, :thumb_image
 
   def self.react
-    where(subtitle: "React")
+    where(subtitle: 'React')
+  end
+
+  def self.by_position
+    order('position ASC')
   end
 
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
