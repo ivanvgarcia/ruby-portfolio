@@ -8,16 +8,11 @@ nav {
   box-shadow: none;
   position: fixed;
   width: 50%;
-  z-index: 10;
+  z-index: 20;
 }
 
 a {
   color: $link-color;
-}
-
-h1 {
-  font-family: 'Yeon Sung', cursive;
-  font-size: 3rem;
 }
 
 .sidenav {
@@ -62,15 +57,20 @@ nav .brand-logo {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0 auto;
+    & img {
+      z-index: 10;
+    }
   }
   &__social-media {
     margin: 2rem;
+    z-index: 10;
     & > *:not(:last-child) {
       margin-right: 1rem;
     }
     & a {
       font-size: 2.5rem;
-      color: #1b1c1f;
+      color: #fff;
     }
   }
   &__information {
@@ -86,12 +86,14 @@ nav .brand-logo {
     }
   }
   &__details {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     align-self: center;
 
     display: flex;
     align-items: center;
     padding: 0 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   &__image {
     border: 2px solid #fff;
@@ -102,7 +104,7 @@ nav .brand-logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(228, 228, 228, 0.8);
+    background: rgba(#fff, 0.8);
     flex: 0 0 50%;
     position: relative;
     z-index: 10;
@@ -112,6 +114,7 @@ nav .brand-logo {
     & h1 {
       color: $primary-color;
       text-align: center;
+      font-size: 3.5rem;
     }
     & h5 {
       padding: 0 1rem;
@@ -124,8 +127,6 @@ nav .brand-logo {
       padding: 0 2rem;
       line-height: 2rem;
       letter-spacing: 0.1rem;
-      font-size: 1.4rem;
-      text-align: left;
     }
 
     & .btn {
@@ -135,18 +136,28 @@ nav .brand-logo {
   &__left {
     flex: 0 0 50%;
   }
+  &__description {
+    font-size: 1.6rem;
+    text-align: center;
+  }
   &__footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     & div {
       text-align: center;
       font-size: 1.2rem;
     }
   }
+}
+
+.map {
+  width: 100%;
+  z-index: 10;
+  padding: 1rem 0;
 }
 
 .dropdown-content a {
@@ -168,7 +179,23 @@ nav .brand-logo {
       height: 70vh;
     }
     &__right {
+      padding: 1rem 0;
+    }
+    &__media {
+      padding-top: 8rem;
+      min-height: 30vh;
+      margin: 0;
+    }
+    &__image {
+      border: 2px solid #fff;
+      width: 200px;
+      height: 200px;
+    }
+    &__right {
       padding: 2rem 0;
     }
+  }
+  .map {
+    width: 90%;
   }
 }

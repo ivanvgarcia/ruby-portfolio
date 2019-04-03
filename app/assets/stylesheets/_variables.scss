@@ -13,12 +13,23 @@ $error-color: color('red', 'base') !default;
 
 $link-color: color('light-blue', 'darken-1') !default;
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 p {
   letter-spacing: 0.05rem;
   line-height: 1.5;
-  font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Yeon Sung', cursive;
 }
 
 .header {
