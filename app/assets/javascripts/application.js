@@ -153,8 +153,8 @@ document.addEventListener('turbolinks:before-render', function() {
 });
 
 document.addEventListener('turbolinks:load', function() {
-  let ready = undefined;
-  let set_positions = undefined;
+  var ready = undefined;
+  var set_positions = undefined;
 
   set_positions = function() {
     $('div[data-id]').each(function(i) {
