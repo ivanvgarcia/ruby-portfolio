@@ -168,7 +168,7 @@ document.addEventListener('turbolinks:load', function() {
     $('.sortable')
       .sortable()
       .bind('sortupdate', function(e, ui) {
-        let updated_order;
+        var updated_order;
         updated_order = [];
         set_positions();
         $('div[data-id]').each(function(i) {
