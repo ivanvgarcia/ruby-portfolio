@@ -144,7 +144,7 @@ document.addEventListener('turbolinks:load', function() {
   });
 });
 
-document.addEventListener('turbolinks:before-render', () => {
+document.addEventListener('turbolinks:before-render', function() {
   var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.getInstance(elem);
   if (instance) {
