@@ -65,6 +65,7 @@ gem "font-awesome-rails"
 gem 'webpacker', '~> 4.x'
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-
-
-
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+gem 'dot_env', '~> 0.0.3'
