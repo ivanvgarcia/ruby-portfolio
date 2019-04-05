@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col s12 m4">
-      <%= image_tag @portfolio_item.main_image, class: "responsive-img" unless @portfolio_item.main_image.nil?
+      <%= image_tag @portfolio_item.main_image.to_s, class: "responsive-img" unless @portfolio_item.main_image.nil?
       %>
     </div>
     <div class="col s12 m8">    
