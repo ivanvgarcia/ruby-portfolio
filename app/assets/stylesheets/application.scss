@@ -15,6 +15,12 @@ a {
   color: $link-color;
 }
 
+.input-field > label,
+label {
+  font-size: 1.4rem;
+  color: $black;
+}
+
 .sidenav {
   z-index: 1000;
 }
