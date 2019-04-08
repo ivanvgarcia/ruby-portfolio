@@ -1,8 +1,7 @@
 <div class="sortable-item col s12 m4" data-id="<%= portfolio_item.id %>">
   <div class="card">
     <div class="card-image">
-      <%= image_tag portfolio_item.thumb_image.to_s unless
-      portfolio_item.thumb_image.nil? %>
+      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
     </div>
     <div class="card-action">
       <span class="card-title"></span>

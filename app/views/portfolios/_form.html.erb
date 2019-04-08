@@ -18,13 +18,17 @@
     <%= form.label :body %> <%= form.text_area :body, class:
     "materialize-textarea" %>
   </div>
-  <div class="input-field col s6">
+  <div class="input-field col s6 ">
     <i class="material-icons prefix">photo</i>
-    <%= form.file_field :main_image %> %>
+    <label class="btn upload">
+      Upload Main Photo <%= form.file_field :main_image, class: 'hide' %>
+    </label>
   </div>
-  <div class="input-field col s6">
+  <div class="input-field col s6 margin-top">
     <i class="material-icons prefix">photo</i>
-    <%= form.file_field :thumb_image %> %>
+    <label class="btn upload">
+      Upload Thumbnail <%= form.file_field :thumb_image, class: 'hide' %>
+    </label>
   </div>
 </div>
 

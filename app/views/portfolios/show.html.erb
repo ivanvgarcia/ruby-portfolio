@@ -3,24 +3,23 @@
 <div class="container">
   <div class="row">
     <div class="col s12 m4">
-      <%= image_tag @portfolio_item.main_image.to_s, class: "responsive-img" unless @portfolio_item.main_image.nil?
-      %>
+      <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), class:
+      "responsive-img" %>
     </div>
-    <div class="col s12 m8">    
+    <div class="col s12 m8">
       <em><%= @portfolio_item.subtitle %></em>
       <p><%= @portfolio_item.body %></p>
-      
+
       <h2>Technologies Used:</h2>
-      
+
       <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
-      <% end %>
-      
-      <%= link_to 'edit', edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %>
-      <%= link_to 'delete', portfolio_path(@portfolio_item), method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>
+      <% end %> <%= link_to 'edit', edit_portfolio_path(@portfolio_item) if
+      logged_in?(:site_admin) %> <%= link_to 'delete',
+      portfolio_path(@portfolio_item), method: :delete, data: { confirm: 'Are
+      you sure?'} if logged_in?(:site_admin) %>
     </div>
   </div>
 
   <%= link_to 'View All Porfolio Items', portfolios_path %>
 </div>
-
